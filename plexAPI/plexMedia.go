@@ -1,4 +1,4 @@
-package plexMedia
+package plexAPI
 
 type Video struct {
 	RatingKey string `xml:"ratingKey,attr"`
@@ -21,7 +21,7 @@ type Video struct {
 	UpdatedAt string `xml:"updatedAt,attr"`
 	ChapterSource string `xml:"chapterSource,attr"`
 	PrimaryExtraKey string `xml:"primaryExtraKey,attr"`
-	Media Media `xml:"Media"`
+	Media []Media `xml:"Media"`
 	Genres []Genre `xml:"Genre"`
 	PlaylistItemID string `xml:"playlistItemID,attr"`
 }
